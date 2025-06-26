@@ -1,0 +1,22 @@
+body {
+    padding: 20px;
+}
+
+textarea {
+    height: 150px;
+}
+
+label {
+    text: 500px;
+}
+
+.label-grande {
+    font-weight: bold;
+  }
+
+.resultado {
+    border: 2px solid #4db6ac;
+    padding: 20px;
+    min-height: 300px;
+    margin-top: 20px;
+}

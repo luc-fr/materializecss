@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaterializeCSS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Importar Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Importar Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+
+  <nav class="red lighten-5">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img src="images/materialize-logo.png" style="height: 65px; margin-left: 10px;"
+          alt=""></a>
+      <h1 class="center-align" style="font-weight: bold;"><span style="color: #eb7177;">Materialize</span><span
+          style="color: #f5a2ad;">CSS</span>
+      </h1>
+    </div>
+  </nav>
+
+  <div class="card-panel" style="margin-top: 50px;">
+    <h4><span style="color: #eb7177;">O que é o Materialize?</span></h4>
+    <p style="font-weight: bold;">É um framework para desenvolvimento de front-end responsivo moderno, podendo ser
+      utilizado para sites e sistemas web e mobile. Criado pela Google e tendo como base o Material Design, também
+      desenvolvida pela Google.</p>
+    <h5>Vantagens :</h5>
+    <ul>
+      <li>- Visual moderno e limpo</li>
+      <li>- Baseado no Material Design</li>
+      <li>- Responsivo por padrão</li>
+      <li>- Fácil de usar e personalizar</li>
+      <li>- Pronto para mobile</li>
+    </ul>
+  </div>
+
+  <div class="card-panel" style="margin-top: 20px;">
+    <h4><span style="color: #eb7177;">Como importar o Materialize na sua página?</span></h4>
+    <p style="font-weight: bold;">Incluir os links no &lt;head&gt; do seu HTML para o CSS :</p>
+    <ul>
+      <li>
+        &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+      </li>
+      <li>&lt;link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"&gt;
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">Incluir o link no final do &lt;body&gt; do seu HTML para o JavaScript :</p>
+    <ul>
+      <li>
+        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"&gt;
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">Ou instale utilizando o NPM :</p>
+    <ul>
+      <li>
+        npm install materialize-css@next
+      </li>
+    </ul>
+  </div>
+
+  <div class="card-panel" style="margin-top: 20px;">
+    <h4><span style="color: #eb7177;">Quais componentes o Materialize oferece?</span></h4>
+    <ul class="collapsible">
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Badges
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Os emblemas podem notificá-lo sobre mensagens ou
+            notificações novas ou não lidas. Adicione a new classe ao emblema para dar a ele o segundo plano.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;div class="collection"&gt;<br>
+            &nbsp;&nbsp;&lt;a href="#!" class="collection-item"&gt;&lt;span
+            class="badge"&gt;1&lt;/span&gt;Alan&lt;/a&gt;<br>
+            &nbsp;&nbsp;&lt;a href="#!" class="collection-item"&gt;&lt;span class="new
+            badge"&gt;4&lt;/span&gt;Alan&lt;/a&gt;<br>
+            &nbsp;&nbsp;&lt;a href="#!" class="collection-item"&gt;Alan&lt;/a&gt;<br>
+            &nbsp;&nbsp;&lt;a href="#!" class="collection-item"&gt;&lt;span
+            class="badge"&gt;14&lt;/span&gt;Alan&lt;/a&gt;<br>
+            &lt;/div&gt;</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Buttons
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Existem três tipos principais de botões descritos
+            no Material Design. O botão em relevo é um botão padrão que representa ações e busca dar profundidade a uma
+            página praticamente plana. O botão de ação circular flutuante é destinado a funções muito importantes.
+            Botões planos geralmente são usados ​​em elementos que já possuem profundidade, como cartões ou
+            modais.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;a class="waves-effect waves-light btn"&gt;button&lt;/a&gt;<br>
+            &lt;a class="waves-effect waves-light btn"&gt;&lt;i class="material-icons
+            left"&gt;cloud&lt;/i&gt;button&lt;/a&gt;<br>
+            &lt;a class="waves-effect waves-light btn"&gt;&lt;i class="material-icons
+            right"&gt;cloud&lt;/i&gt;button&lt;/a&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons"
+            style="font-weight: bold;">chevron_right</i>Breadcrumbs
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Breadcrumbs são uma boa maneira de exibir sua
+            localização atual. Geralmente, são usados ​​quando você tem várias camadas de conteúdo.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;nav&gt;<br>
+            &nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col s12"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#!" class="breadcrumb"&gt;First&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#!" class="breadcrumb"&gt;Second&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#!" class="breadcrumb"&gt;Third&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
+            &lt;/nav&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Cards
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Os cards são um meio prático de exibir conteúdo
+            composto por diferentes tipos de objetos. Eles também são adequados para apresentar objetos semelhantes cujo
+            tamanho ou ações suportadas podem variar consideravelmente, como fotos com legendas de tamanho
+            variável.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;div class="row"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="col s12 m6"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card blue-grey darken-1"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-content white-text"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="card-title"&gt;Card Title&lt;/span&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;I am a very simple card. I am good at containing
+            small bits of information.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am convenient because I require little markup to use
+            effectively.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-action"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;This is a link&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;This is a link&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
+            &lt;/div&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons"
+            style="font-weight: bold;">chevron_right</i>Collections
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Coleções permitem que você agrupe objetos de
+            lista.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;ul class="collection with-header"&gt;<br>
+            &nbsp;&nbsp;&lt;li class="collection-header"&gt;&lt;h4&gt;First Names&lt;/h4&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="collection-item"&gt;Alvin&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="collection-item"&gt;Alvin&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="collection-item"&gt;Alvin&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="collection-item"&gt;Alvin&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Floating
+          Action Button
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Se quiser um botão de ação flutuante fixo, você
+            pode adicionar várias ações que aparecerão ao passar o mouse. Nossa demonstração está no canto inferior
+            direito da página.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;div class="fixed-action-btn"&gt;<br>
+            &nbsp;&nbsp;&lt;a class="btn-floating btn-large red"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="large material-icons"&gt;mode_edit&lt;/i&gt;<br>
+            &nbsp;&nbsp;&lt;/a&gt;<br>
+            &nbsp;&nbsp;&lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="btn-floating red"&gt;&lt;i
+            class="material-icons"&gt;insert_chart&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="btn-floating yellow darken-1"&gt;&lt;i
+            class="material-icons"&gt;format_quote&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="btn-floating green"&gt;&lt;i
+            class="material-icons"&gt;publish&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="btn-floating blue"&gt;&lt;i
+            class="material-icons"&gt;attach_file&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;/ul&gt;<br>
+            &lt;/div&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Footer
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Os rodapés são uma ótima maneira de organizar a
+            navegação e as informações do site no final de uma página. É para lá que o usuário olhará depois de rolar a
+            página atual ou procurar informações adicionais sobre o seu site.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;footer class="page-footer"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="container"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col l6 s12"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="white-text"&gt;Footer Content&lt;/h5&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="grey-text text-lighten-4"&gt;You can use rows
+            and columns here to organize your footer content.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col l4 offset-l2 s12"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="white-text"&gt;Links&lt;/h5&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="grey-text text-lighten-3"
+            href="#!"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="grey-text text-lighten-3"
+            href="#!"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="grey-text text-lighten-3"
+            href="#!"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="grey-text text-lighten-3"
+            href="#!"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;div class="footer-copyright"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2014 Copyright Text<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="grey-text text-lighten-4 right" href="#!"&gt;More
+            Links&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
+            &lt;/footer&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Icons
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Você pode baixá-los diretamente das
+            especificações do Material Design. Para poder usar esses ícones, você deve incluir esta linha na parte do
+            seu código HTML &lt;head&gt; : &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"&gt;</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;!--<br>
+            &nbsp;&nbsp;Sizes:<br>
+            &nbsp;&nbsp;tiny: 1rem<br>
+            &nbsp;&nbsp;small: 2rem<br>
+            &nbsp;&nbsp;medium: 4rem<br>
+            &nbsp;&nbsp;large: 6rem<br>
+            --&gt;<br>
+            &lt;i class="large material-icons"&gt;insert_chart&lt;/i&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Navbar
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">A barra de navegação é totalmente contida por uma
+            tag Nav do HTML5. Dentro de um div de contêiner recomendado, há duas partes principais da barra de
+            navegação: um link para o logotipo ou marca e os links de navegação. Você pode alinhar esses links à
+            esquerda ou à direita.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;nav&gt;<br>
+            &nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="brand-logo"&gt;Logo&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul id="nav-mobile" class="right hide-on-med-and-down"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="sass.html"&gt;Sass&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a
+            href="badges.html"&gt;Components&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a
+            href="collapsible.html"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
+            &lt;/nav&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Pagination
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Adicione links de paginação para ajudar a dividir
+            seu conteúdo longo em blocos mais curtos e fáceis de entender.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>&lt;ul class="pagination"&gt;<br>
+            &nbsp;&nbsp;&lt;li class="disabled"&gt;&lt;a href="#!"&gt;&lt;i
+            class="material-icons"&gt;chevron_left&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="active"&gt;&lt;a href="#!"&gt;1&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="waves-effect"&gt;&lt;a href="#!"&gt;2&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="waves-effect"&gt;&lt;a href="#!"&gt;3&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="waves-effect"&gt;&lt;a href="#!"&gt;4&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="waves-effect"&gt;&lt;a href="#!"&gt;5&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li class="waves-effect"&gt;&lt;a href="#!"&gt;&lt;i
+            class="material-icons"&gt;chevron_right&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons" style="font-weight: bold;">chevron_right</i>Preloader
+        </div>
+        <div class="collapsible-body"><span style="font-weight: bold;">Se você tiver conteúdo que demore muito para
+            carregar, dê feedback ao usuário. Por isso, disponibilizamos diversos indicadores de atividade e
+            progresso.</span>
+          <p style="font-weight: bold; color: #4db6ac;">Exemplo de Código :</p>
+          <p>Determinado<br>&lt;div class="progress"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="determinate" style="width: 70%"&gt;&lt;/div&gt;<br>
+            &lt;/div&gt;<br><br>Indeterminado<br>
+            &lt;div class="progress"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="indeterminate"&gt;&lt;/div&gt;<br>
+            &lt;/div&gt;
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <div class="input-field" style="margin-top: 100px;">
+    <textarea id="codigo" class="materialize-textarea" placeholder="Teste seu código aqui..."></textarea>
+    <label for="codigo" class="label-grande">Código HTML</label>
+  </div>
+
+  <button class="waves-effect waves-light btn" onclick="executarCodigo()">Executar</button>
+
+  <h6 style="margin-top: 80px; color: #9e9e9e; font-weight: bold;">Resultado :</h6>
+  <div id="resultado" class="resultado"></div>
+
+  <!-- Importar Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    function executarCodigo() {
+      const codigo = document.getElementById('codigo').value;
+      const resultado = document.getElementById('resultado');
+      resultado.innerHTML = codigo;
+    }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.collapsible');
+      M.Collapsible.init(elems); // modo accordion é padrão
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Define as opções para o botão flutuante
+      var options = {
+        direction: 'top',         // pode ser 'top', 'right', 'bottom', 'left'
+        hoverEnabled: false       // false = só abre ao clicar
+      };
+
+      // Seleciona e inicializa todos os botões com a classe fixed-action-btn
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems, options);
+    });
+  </script>
+
+</body>
+
+</html>
